@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form>
+    <input type="text" id="input1">
+    </form>
+    
+    <form>
+    <input type="text" id="input2">
+    </form>
+    
+    <form>
+    <input type="text" id="input3">
+    </form>
+    <div><button onclick="names()" id="submit">Submit</button></div>
+    
+<p id="demo"></p>
+
+<script>
+    function names()
+    {
+    var inputarray = [];
+    
+    
+    var inputarray1=document.getElementById("input1").value;
+    var inputarray2=document.getElementById("input2").value;
+    var inputarray3=document.getElementById("input3").value;
+        
+        inputarray.push(inputarray1);
+        inputarray.push(inputarray2);
+        inputarray.push(inputarray3);
+        
+        
+    
+    document.getElementById("demo").innerHTML = "The Array is = "+ inputarray + "<br>" + "The Length of the array is " + inputarray.length;
+    }
+</script>
+
+</body>
+</html>
+
