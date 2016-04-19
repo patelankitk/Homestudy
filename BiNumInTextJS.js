@@ -9,11 +9,11 @@ function compare()
     
     if(firstinput === secondinput)
         {
-            document.getElementById("demo").innerHTML = "Both are same"
+            document.getElementById("demo").innerHTML = "Both are same";
         }
     else
         {
-            document.getElementById("demo").innerHTML="Both are different"
+            document.getElementById("demo").innerHTML="Both are different";
         }
 
 }

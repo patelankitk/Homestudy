@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to loop through a block of code Fifty times.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    
+    var text = "";
+    var i;
+    for (i = 0; i <=50; i++) {
+        text+=i + "<br>";
+      
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

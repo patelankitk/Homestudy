@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display 10 numbers.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    
+    var text = "";
+    var i;
+    var j=1;
+    do{
+        
+            text+=j + "<br>";
+            
+        j++;
+      document.getElementById("demo").innerHTML = text;
+    }while(j<=10);
+    
+}
+</script>
+
+</body>
+</html>
