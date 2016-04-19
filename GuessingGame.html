@@ -4,24 +4,21 @@
 <body>
 
 <p>Guess a Number between 1 to 100.</p>
-
-
     
-    <form>
-       <!-- Creating input form-->
-        <input type="text" id="userinput">
-    </form>
+    <!-- Creating input form-->
+    <input type="text" id="userinput">
+    
     <!--Creating Button-->
-    <div><button id="button">Guess it</button></div>
+    <button onclick="randomvalue()"  id="button">Guess it</button>
 
 <p id="demo"></p>
     
+    <p>Please click Play to continue.</p>
+    
+    <button onclick="play()">Continue Playing</button>
     
 <script src="GuessingGameJS.js"></script>
     
-    <button id="play">Play</button>
-    <button id="quit">Quit</button>
-
-
+    
 </body>
 </html>
