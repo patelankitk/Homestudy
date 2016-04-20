@@ -21,13 +21,13 @@ function Search()
     var indexofelement = CountryArray.indexOf(UserCountry2);
     
     // Displaying if the country is present or not.
-    if(indexofelement===-1)
+    if(indexofelement === -1)
         {
-            document.getElementById("SearchResult").innerHTML ="The Country "+ UserCountry1 +" is not present in the Array."
+            document.getElementById("SearchResult").innerHTML = "The Country "+ UserCountry1 +" is not present in the Array."
         }
     else
         {
-            document.getElementById("SearchResult").innerHTML ="The Country "+ CountryArray[indexofelement] +" is present in the Array." + "<br>"+ "The Country "+ CountryArray[indexofelement] +" is at the position " + (indexofelement+1)  +" in the Array." + "<br>";
+            document.getElementById("SearchResult").innerHTML = "The Country "+ CountryArray[indexofelement] +" is present in the Array." + "<br>"+ "The Country "+ CountryArray[indexofelement] +" is at the position " + (indexofelement+1)  +" in the Array." + "<br>";
         }
  
 } //End of function
