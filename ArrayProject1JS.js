@@ -11,29 +11,30 @@ event2.addEventListener('click', winner, false);
 
 // Creating an Empty Array //
 var Names = [];
+
+
 // Function to create the list in array and add new items.
 function list ()
 {
-   
         var namelist = document.getElementById("UserInput").value;
-    
         Names.push(namelist);
-        
+          
+    var text = "<ul>";
     
-   // displayig the list to user
+   // Displayig the list to user
     for(i=0; i<Names.length; i++)
         {
-            document.getElementById("List").innerHTML =Names;
-            
+            text = text + "<li>" + Names[i] + "</li>";  
         }
-    
+          text = text + "</ul>";
+         document.getElementById("List").innerHTML = text;  
 }
 
-// generating the winner using following function.
+
+// Generating the winner using following function.
 function winner()
 {
     var winner1 = Math.floor(Math.random() * Names.length);
-    
     document.getElementById("winner").innerHTML ="The Winner is " +Names[winner1];
 }
 
